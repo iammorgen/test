@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="1">
+	<tr>
+		<td>name</td>
+		<td>email</td>
+		<td>phone</td>
+		<td>add</td>
+	</tr>
+</table>
+</body>
+</html>
