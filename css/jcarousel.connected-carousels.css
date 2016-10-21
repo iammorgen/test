@@ -1,0 +1,426 @@
+/** Stage container **/
+
+
+.carousel-indicators li{margin:0 5px}
+.huiguwap{margin: 0 -15px}
+.huiguwap{display: none}
+        .wrapper {
+            max-width: 944px;
+            margin: 0 auto;
+            padding-bottom: 101px;
+            display: block;
+        }
+
+        .connected-carousels .stage {
+            width: 944px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .connected-carousels .photo-credits {
+            position: absolute;
+            right: 15px;
+            bottom: 0;
+            font-size: 13px;
+            color: #fff;
+            text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+            opacity: .66;
+        }
+
+        .connected-carousels .photo-credits a {
+            color: #fff;
+        }
+
+        /** Navigation container **/
+
+        .connected-carousels .navigation {
+            width: 844px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        /** Shared carousel styles **/
+
+        .connected-carousels .carousel {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .connected-carousels .carousel ul {
+            width: 20000em;
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .connected-carousels .carousel li {
+            float: left;
+            position: relative;
+        }
+
+        /** Stage carousel specific styles **/
+
+        .connected-carousels .carousel-stage {
+            height: 236px;
+            width: 944px;
+        }
+
+        /** Navigation carousel specific styles **/
+
+        .connected-carousels .carousel-navigation {
+            height: 108px;
+            width: 264px;
+      		margin-left: 33px;
+        }
+
+        .connected-carousels .carousel-navigation li {
+            cursor: pointer;
+            position: relative;
+            margin-right: 13px;
+            width: 119px
+        }
+
+        .connected-carousels .carousel-navigation li img {
+            display: block;
+			width: 100%;
+        }
+
+        .connected-carousels .carousel-navigation li.active img {
+
+        }
+        .img_desc{display: none;}
+		.tu_p img{width: 49%;}
+        .img_desc{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 288px;
+            height:479px;
+            
+            color: #fff;
+            font-size: 16px;
+            padding:0 6px 0 18px;
+            text-align: left;
+            background-color: rgba(0,0,0,1);
+
+        }
+        .img_desc .img_order{
+            font-size: 16px;
+            color: #fff;
+        }
+        .img_desc .img_tips{padding-left: 20px}
+
+        .img_order em{
+            color: #32b1c2;
+        }
+        .connected-carousels .carousel-navigation li.active .borr{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            border: 3px solid #32b1c2;
+            width: 100%;
+            height: 100%;}
+
+        /** Stage carousel controls **/
+
+        .connected-carousels .prev-stage,
+        .connected-carousels .next-stage {
+            display: block;
+            position: absolute;
+            bottom: -129px;
+            width: 27px;
+            height: 99px;
+            color: #fff;
+            z-index: 9;
+        }
+		
+        .connected-carousels .prev-stage {
+            left: 0;
+            background: url("../images/butn_l.jpg") no-repeat;
+        }
+		.connected-carousels .prev-stage:hover{background: url(../images/butn_lh.jpg) no-repeat;}
+        .connected-carousels .next-stage {
+            left: 294px;
+            
+            background: url("../images/butn_r.jpg") no-repeat;
+        }
+		.connected-carousels .next-stage:hover{background: url(../images/butn_rh.jpg) no-repeat;}
+        .connected-carousels .prev-stage.inactive,
+        .connected-carousels .next-stage.inactive {
+            display: block;
+        }
+
+        .connected-carousels .prev-stage span,
+        .connected-carousels .next-stage span {
+            display: block;
+            /*    position: absolute;
+                top: 50%;
+                width: 30px;
+                height: 30px;
+                text-align: center;*/
+
+
+        }
+
+        /*.connected-carousels .prev-stage span {
+            left: 20px;
+        }
+
+        .connected-carousels .next-stage span {
+            right: 20px;
+        }
+
+        .connected-carousels .prev-stage:hover span,
+        .connected-carousels .next-stage:hover span {
+            display: block;
+        }
+        */
+        /** Navigation carousel controls **/
+
+        .connected-carousels .prev-navigation,
+        .connected-carousels .next-navigation {
+            display: none;
+            position: absolute;
+            width: 37px;
+            height: 107px;
+            text-decoration: none;
+
+        }
+
+        .connected-carousels .prev-navigation {
+            left: -50px;
+            background: url(../images/butn_l.jpg) no-repeat;
+        }
+
+        .connected-carousels .next-navigation {
+            right: -50px;
+            background: url(../images/butn_r.jpg) no-repeat;
+        }
+
+        .connected-carousels .prev-navigation.inactive,
+        .connected-carousels .next-navigation.inactive {
+            opacity: .5;
+            cursor: default;
+        }
+        
+
+@media(width: 375px){
+.connected-carousels{padding-left: 27px;}	
+}
+@media(width: 414px){
+.connected-carousels{padding-left: 42px;}	
+}
+@media(min-width: 768px){
+.connected-carousels .carousel-stage{height: 484px; width: 943px;}	
+.connected-carousels .carousel-navigation{width: 723px;}
+.connected-carousels .carousel-navigation li{width: 161px;margin-right: 20px;}
+.connected-carousels .prev-stage{left: 5px;}
+.connected-carousels .next-stage{left: 743px;}
+.connected-carousels .navigation{width: 811px;}
+.connected-carousels .prev-stage, .connected-carousels .next-stage{bottom: -144px;}
+.tu_p img{width: 114%;padding-right: 200px;}
+}
+@media(min-width: 996px){
+	.img_desc{display: block;}
+    .huiguwap{display: none}
+        .wrapper {
+            max-width: 944px;
+            margin: 0 auto;
+            padding-bottom: 101px;
+            display: block;
+        }
+
+        .connected-carousels .stage {
+            width: 944px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .connected-carousels .photo-credits {
+            position: absolute;
+            right: 15px;
+            bottom: 0;
+            font-size: 13px;
+            color: #fff;
+            text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+            opacity: .66;
+        }
+
+        .connected-carousels .photo-credits a {
+            color: #fff;
+        }
+
+        /** Navigation container **/
+
+        .connected-carousels .navigation {
+            width: 844px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        /** Shared carousel styles **/
+
+        .connected-carousels .carousel {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .connected-carousels .carousel ul {
+            width: 20000em;
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .connected-carousels .carousel li {
+            float: left;
+            position: relative;
+        }
+
+        /** Stage carousel specific styles **/
+
+        .connected-carousels .carousel-stage {
+            height: 482px;
+            width: 944px;
+        }
+
+        /** Navigation carousel specific styles **/
+
+        .connected-carousels .carousel-navigation {
+            height: 110px;
+            width: 845px;
+      		margin-left: 0;
+        }
+
+        .connected-carousels .carousel-navigation li {
+            cursor: pointer;
+            position: relative;
+            margin-right: 25px;
+            width: 149px
+        }
+
+        .connected-carousels .carousel-navigation li img {
+            display: block;
+
+        }
+
+        .connected-carousels .carousel-navigation li.active img {
+
+        }
+		.tu_p img{padding-right: 293px;width: 100%;}
+        .img_desc{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 288px;
+            height:479px;
+            
+            color: #fff;
+            font-size: 16px;
+            padding:0 6px 0 18px;
+            text-align: left;
+            background-color: rgba(0,0,0,1);
+
+        }
+        .img_desc .img_order{
+            font-size: 16px;
+            color: #fff;
+        }
+        .img_desc .img_tips{padding-left: 20px}
+
+        .img_order em{
+            color: #32b1c2;
+        }
+        .connected-carousels .carousel-navigation li.active .borr{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            border: 3px solid #32b1c2;
+            width: 100%;
+            height: 110px;}
+
+        /** Stage carousel controls **/
+
+        .connected-carousels .prev-stage,
+        .connected-carousels .next-stage {
+            display: block;
+            position: absolute;
+            bottom: -138px;
+            width: 27px;
+            height: 99px;
+            color: #fff;
+        }
+		
+        .connected-carousels .prev-stage {
+            left: 0;
+            background: url("../images/butn_l.jpg") no-repeat;
+        }
+		.connected-carousels .prev-stage:hover{background: url(../images/butn_lh.jpg) no-repeat;}
+        .connected-carousels .next-stage {
+        	
+            left: 921px;
+            background: url("../images/butn_r.jpg") no-repeat;
+        }
+		.connected-carousels .next-stage:hover{background: url(../images/butn_rh.jpg) no-repeat;}
+        .connected-carousels .prev-stage.inactive,
+        .connected-carousels .next-stage.inactive {
+            display: block;
+        }
+
+        .connected-carousels .prev-stage span,
+        .connected-carousels .next-stage span {
+            display: block;
+            /*    position: absolute;
+                top: 50%;
+                width: 30px;
+                height: 30px;
+                text-align: center;*/
+
+
+        }
+
+        /*.connected-carousels .prev-stage span {
+            left: 20px;
+        }
+
+        .connected-carousels .next-stage span {
+            right: 20px;
+        }
+
+        .connected-carousels .prev-stage:hover span,
+        .connected-carousels .next-stage:hover span {
+            display: block;
+        }
+        */
+        /** Navigation carousel controls **/
+
+        .connected-carousels .prev-navigation,
+        .connected-carousels .next-navigation {
+            display: none;
+            position: absolute;
+            width: 37px;
+            height: 107px;
+            text-decoration: none;
+
+        }
+
+        .connected-carousels .prev-navigation {
+            left: -50px;
+            background: url("../images/ico_prev.jpg") no-repeat;
+        }
+
+        .connected-carousels .next-navigation {
+            right: -50px;
+            background: url("../images/ico_next.jpg") no-repeat;
+        }
+
+        .connected-carousels .prev-navigation.inactive,
+        .connected-carousels .next-navigation.inactive {
+            opacity: .5;
+            cursor: default;
+        }
+}
